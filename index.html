@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauget Flower Shop</title>
+
+    <!-- tailwindcss CDN link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- tailwindcss custom variable -->
+<style type="text/tailwindcss">
+
+    @theme inline {
+        --color-brand-orange: #FF5722;
+        --color-brand-rose: #E91E63;
+        --color-brand-pink: #FFF0F5;
+        --color-brand-dark: #2D232E;
+        --color-brand-muted: #7A6E7D;
+
+        --font-playfair-display: "Playfair Display", serif;
+        --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Top badge for store discount start -->
+    <div class="shop__modifier bg-brand-dark px-4 py-2 text-xs text-white ">
+        <p id="modifier__text" class="text-center">ফ্রি ডেলিভারি পাচ্ছেন ৳৯৯৯+ টাকার যেকোনো ফ্লাওয়ার অর্ডারে! <a href="#" class="text-brand-orange ml-2 border-b"> অর্ডার করুন</a></p>
+    </div>
+    <!-- Top badge for store discount end -->
+
+    <!-- header section start -->
+    <header class="w-full h-17.5 bg">
+        <div class="container mx-auto px-4 py-4 flex">
+
+            <!-- header logo -->
+            <a href="#" id="header__logo" class="flex gap-2 group items-center">
+                <!-- SVG Flower -->
+                <div class=" size-10 bg-orange-200 flex items-center justify-center rounded-full">
+                    <svg class="w-6 h-6 text-brand-orange transition-transform duration-500 group-hover:rotate-12" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C13.1 2 14 2.9 14 4C14 4.74 13.59 5.39 13 5.73V7C15.76 7 18 9.24 18 12C18 13.59 17.25 15 16.09 15.91C16.66 16.54 17 17.38 17 18.3C17 20.34 15.34 22 13.3 22C12.18 22 11.18 21.5 10.5 20.72C9.82 21.5 8.82 22 7.7 22C5.66 22 4 20.34 4 18.3C4 17.38 4.34 16.54 4.91 15.91C3.75 15 3 13.59 3 12C3 9.24 5.24 7 8 7V5.73C7.41 5.39 7 4.74 7 4C7 2.9 7.9 2 9 2C9.74 2 10.39 2.41 10.73 3H11.27C11.61 2.41 12.26 2 13 2M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z"/>
+                    </svg>
+                    <span></span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-3xl font-playfair-display">fauget</span>
+                    <span>orange shop</span>
+                </div>
+            </a>
+        </div>
+
+    </header>
+
+
+</body>
+</html>
+
+
+
+<!-- <svg class="w-6 h-6 text-brand-orange  transition-transform duration-500 group-hover:rotate-12" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 2C13.1 2 14 2.9 14 4C14 4.74 13.59 5.39 13 5.73V7C15.76 7 18 9.24 18 12C18 13.59 17.25 15 16.09 15.91C16.66 16.54 17 17.38 17 18.3C17 20.34 15.34 22 13.3 22C12.18 22 11.18 21.5 10.5 20.72C9.82 21.5 8.82 22 7.7 22C5.66 22 4 20.34 4 18.3C4 17.38 4.34 16.54 4.91 15.91C3.75 15 3 13.59 3 12C3 9.24 5.24 7 8 7V5.73C7.41 5.39 7 4.74 7 4C7 2.9 7.9 2 9 2C9.74 2 10.39 2.41 10.73 3H11.27C11.61 2.41 12.26 2 13 2M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z"/>
+</svg>
+
+footer icon: 🌸 -->
