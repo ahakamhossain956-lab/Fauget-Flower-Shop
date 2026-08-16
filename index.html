@@ -31,7 +31,7 @@
     }
   </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-plus-jakarta-sans">
     <!-- Top badge for store discount start -->
     <div class="shop__modifier bg-brand-dark px-4 py-2 text-xs text-white ">
         <p id="modifier__text" class="text-center">ফ্রি ডেলিভারি পাচ্ছেন ৳৯৯৯+ টাকার যেকোনো ফ্লাওয়ার অর্ডারে! <a href="#" class="text-brand-orange ml-2 border-b"> অর্ডার করুন</a></p>
@@ -40,7 +40,7 @@
 
     <!-- header section start -->
     <header class="w-full h-17.5 bg-orange-100">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
             <!-- header logo -->
             <a href="#" id="header__logo" class="flex gap-2 group items-center">
@@ -56,29 +56,104 @@
                     <span class="leading-none tracking-[3px] uppercase text-[10px] text-brand-muted font-bold">orange shop</span>
                 </div>
             </a>
-            <ul class="hidden">
-                <li><a href="#">Home</a></li>
+            <ul class="hidden lg:flex gap-10 font-semibold text-brand-muted [&>*]:cursor-pointer
+                [&>:not(.active)]:hover:text-brand-orange [&>*]:relative [&>*]:after:absolute [&>*]:after:bottom-0
+                [&>*]:after:left-0 [&>:not(.active)]:after:w-0 [&>*]:after:h-0.5 [&>*]:after:bg-brand-orange 
+                [&>:not(.active)]:hover:after:w-full [&>*]:after:transition-all [&>*]:after:duration-300
+                first:after:w-full">
+                <li class="text-brand-orange active after:w-full"><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Occasions</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <ul class="flex gap-2 [&>*]:cursor-pointer items-center">
-                <li><a href="#" class="text-xl text-brand-muted transition duration-300 hover:text-brand-orange"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="#" class="text-xl text-brand-muted transition duration-300 hover:text-brand-orange hidden sm:visible"><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href="#" class="group flex items-center px-4 py-2 bg-black text-white text-sm font-semibold gap-1 rounded-full hover:bg-brand-orange hover:shadow-md hover:-translate-y-1 transition-all duration-300"><i class="fa-solid fa-cart-shopping transition-all duration-300 group-hover:-translate-y-0.5"></i> Cart($56)
-                </a></li>
+            <ul class="flex gap-4 [&>*]:cursor-pointer items-center">
+                <li class="text-xl text-brand-muted transition duration-300 hover:text-brand-orange hidden min-[480px]:block"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="text-xl text-brand-muted transition duration-300 hover:text-brand-orange hidden min-[480px]:block"><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li class="group flex items-center px-4 py-2 bg-black text-white text-sm font-semibold gap-1 rounded-full hover:bg-brand-orange hover:shadow-md hover:-translate-y-1 transition-all duration-300 hidden min-[370px]:block"><a href="#"><i class="fa-solid fa-cart-shopping transition-all duration-300 group-hover:-translate-y-0.5"></i> Cart($56)</a>
+                </li>
+                <li class="lg:hidden">
+                    <div class="cursor-pointer flex flex-col h-auto gap-1 [&>*]:bg-black [&>*]:inline-block [&>*]:w-6 [&>*]:h-0.5">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
             </ul>
-
-            <div class="cursor-pointer flex flex-col h-auto gap-1 [&>*]:bg-black [&>*]:inline-block [&>*]:w-6 [&>*]:h-0.5">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
-
     </header>
+
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section id="hero-section" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center lg:flex-row lg:items-start gap-10">
+            
+            <!-- Left Content Column -->
+            <div class="w-full lg:flex-1 flex flex-col items-center lg:items-start">
+                
+                <!-- Badge -->
+                <h3 class="uppercase text-brand-rose px-4 py-1 rounded-full bg-orange-100 inline-flex items-center font-semibold text-sm text-center lg:text-left">
+                    <span class="inline-block size-2 bg-brand-rose rounded-full mr-2"></span> 
+                    Premium Floral Collection
+                </h3>
+                
+                <!-- Main Title -->
+                <h1 class="font-playfair-display text-4xl md:text-5xl lg:text-6xl font-semibold mt-8 w-full text-center lg:text-left">
+                    ELEGANT & <span class="text-brand-orange">FRESH BLOOMS</span> FOR EVERY MOMENT
+                </h1>
+                
+                <!-- Description -->
+                <p class="text-brand-muted mt-8 mb-8 max-w-[640px] text-center lg:text-left md:text-lg">
+                    Elevate your special moments with handpicked, garden-fresh flowers. From timeless classic roses to exotic handcrafted bouquets, we deliver beauty and fragrance right to your doorstep.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row w-full max-w-[480px] gap-5 border-b border-gray-200 pb-6">
+                    <a href="#" class="w-full flex-1 flex items-center justify-center gap-3 bg-[#F97316] text-white py-3 border border-[#F97316] rounded-full shadow-sm font-semibold group hover:-translate-y-0.5 transition-all text-center">
+                        Shop Bouquet Now 
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-2 transition-all duration-300"></i>
+                    </a>
+                    <a href="#" class="w-full flex-1 inline-block py-3 border border-brand-muted rounded-full shadow-sm font-semibold text-center uppercase text-sm tracking-wider transition-all duration-300 hover:text-brand-orange hover:border-brand-orange hover:-translate-y-0.5">
+                        explore custom care
+                    </a>
+                </div>
+
+                <!-- Stats Bar -->
+                <div class="flex w-full max-w-[640px] p-8 justify-center gap-8 text-center text-gray-500 text-xs lg:justify-start">
+                    <div>
+                        <h3 class="font-bold text-xl mb-2 text-black">100%</h3>
+                        <p>Fresh Guaranteed</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2 text-black">Same Day</h3>
+                        <p>Fast Delivery</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2 text-black">4.9★</h3>
+                        <p>Customer rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Card Image Column -->
+            <div class="w-full max-w-[500px] h-[450px] md:h-[550px] lg:h-[450px] lg:w-[500px] rounded-2xl overflow-hidden border-6 border-white shadow-lg relative cursor-pointer hover:scale-105 transition-all duration-300">
+                <img src="./image/hero-image.avif" alt="Fresh Floral Bouquet" class="h-full w-full object-cover" />
+                
+                <!-- Overlay Badge -->
+                <div class="flex items-center gap-4 absolute bottom-4 left-4 bg-white p-4 rounded-2xl shadow-md text-left">
+                    <div class="p-2 bg-orange-100 rounded-full text-base">🌸</div>
+                    <div>
+                        <p class="text-xs font-semibold">Handcrafted Daily</p>
+                        <p class="text-[10px] text-gray-600">By Expert Florists</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section end -->
 
 
 </body>
@@ -86,8 +161,6 @@
 
 
 
-<!-- <svg class="w-6 h-6 text-brand-orange  transition-transform duration-500 group-hover:rotate-12" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2C13.1 2 14 2.9 14 4C14 4.74 13.59 5.39 13 5.73V7C15.76 7 18 9.24 18 12C18 13.59 17.25 15 16.09 15.91C16.66 16.54 17 17.38 17 18.3C17 20.34 15.34 22 13.3 22C12.18 22 11.18 21.5 10.5 20.72C9.82 21.5 8.82 22 7.7 22C5.66 22 4 20.34 4 18.3C4 17.38 4.34 16.54 4.91 15.91C3.75 15 3 13.59 3 12C3 9.24 5.24 7 8 7V5.73C7.41 5.39 7 4.74 7 4C7 2.9 7.9 2 9 2C9.74 2 10.39 2.41 10.73 3H11.27C11.61 2.41 12.26 2 13 2M12 9C10.34 9 9 10.34 9 12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12C15 10.34 13.66 9 12 9Z"/>
-</svg>
+<!-- 
 
 footer icon: 🌸 -->
