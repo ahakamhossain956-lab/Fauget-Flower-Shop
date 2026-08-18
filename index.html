@@ -138,8 +138,8 @@
             </div>
 
             <!-- Right Card Image Column -->
-            <div class="w-full max-w-[500px] h-[450px] md:h-[550px] lg:h-[450px] lg:w-[500px] rounded-2xl overflow-hidden border-6 border-white shadow-lg relative cursor-pointer hover:scale-105 transition-all duration-300">
-                <img src="./image/hero-image.avif" alt="Fresh Floral Bouquet" class="h-full w-full object-cover" />
+            <div class="w-full max-w-[500px] h-[450px] md:h-[550px] lg:h-[450px] lg:w-[500px] rounded-2xl overflow-hidden border-6 border-white shadow-lg relative cursor-pointer">
+                <img src="./image/hero-image.avif" alt="Fresh Floral Bouquet" class="h-full w-full object-cover hover:scale-105 transition-all duration-300" />
                 
                 <!-- Overlay Badge -->
                 <div class="flex items-center gap-4 absolute bottom-4 left-4 bg-white p-4 rounded-2xl shadow-md text-left">
@@ -416,6 +416,130 @@
         </div>
     </section>
     <!-- About Section End -->
+
+    <!-- Latest Section Start -->
+    <section id="latest-section" class="py-10 bg-[#f3f3f3]">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col gap-8">
+
+            <!-- Header box -->
+            <div class="text-center flex flex-col gap-4 mb-4 justify-center items-center">
+                <h3 class="text-xs font-semibold uppercase text-brand-orange">Exclusive Offers</h3>
+
+                <h2 class="text-3xl font-playfair-display font-semibold">
+                    <span class="text-brand-orange">Latest</span> Deals & Discounts
+                </h2>
+
+                <p class="max-w-[640px] text-md text-gray-500">
+                    Take advantage of our limited-time seasonal offers. Grab your favorite fresh bouquets and indoor greenery at unbeatable prices!
+                </p>
+            </div>
+
+            <!-- Image Box -->
+            <div class="grid grid-cols-1 grid-rows-4 gap-4 sm:grid-cols-2 sm:grid-rows-2 lg:h-[1000px]">
+
+                <div class="row-span-2 flex flex-col gap-4">
+                    <!-- img card 1 -->
+                    <div class="max-w-full overflow-hidden aspect-square rounded-2xl cursor-pointer group relative">
+                        <img src="./image/latest-1.avif" alt="" class="h-full w-full object-cover transition-all duration-300 group-hover:scale-110">
+
+                        <!-- Image Top bg -->
+                        <div class="absolute bg-black/40 top-0 p-8 size-full text-white flex flex-col items-start justify-center">
+                            <p class="px-3 py-1 rounded-full bg-brand-orange text-[10px] leading-3 tracking-widest font-semibold uppercase mb-2">Flash Sale</p>
+
+                            <h2 class="font-playfair-display text-2xl font-semibold mb-2">50% Off | Spring Tulips</h2>
+
+                            <p class="text-xs mb-2">Limited stock available for this week only.</p>
+
+                            <a href="#" class="text-sm font-semibold text-brand-orange gap-1 p-1 flex items-center justify-center">Shop Now <i class="fa-solid fa-arrow-right transition-all duration-300 group-hover:translate-x-2"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- img card 2 -->
+                    <div class="max-w-full overflow-hidden aspect-square rounded-2xl cursor-pointer group relative">
+                        <img src="./image/latest-2.avif" alt="" class="h-full w-full object-cover transition-all duration-300 group-hover:scale-110">
+
+                        <!-- Image Top bg -->
+                        <div class="absolute bg-black/40 top-0 p-8 size-full text-white flex flex-col items-start justify-center">
+                            <p class="px-3 py-1 rounded-full bg-green-600 text-[10px] leading-3 tracking-widest font-semibold uppercase mb-2">Indoor Collection</p>
+
+                            <h2 class="font-playfair-display text-2xl font-semibold mb-2">30% Off | Mini Succulents</h2>
+
+                            <p class="text-xs mb-2">Limited stock available for this week only.</p>
+
+                            <a href="#" class="text-sm font-semibold text-brand-orange gap-1 p-1 flex items-center justify-center">Shop Now <i class="fa-solid fa-arrow-right transition-all duration-300 group-hover:translate-x-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- img card 3 -->
+                <div class="max-w-full overflow-hidden rounded-2xl cursor-pointer group relative row-span-2">
+                    <img src="./image/latest-large.avif" alt="" class="h-full w-full object-cover transition-all duration-300 group-hover:scale-110">
+
+                    <!-- Image Top bg -->
+                    <div class="absolute bg-black/40 top-0 p-8 size-full text-white flex flex-col items-start justify-center">
+                        <p class="px-3 py-1 rounded-full bg-brand-rose text-[10px] leading-3 tracking-widest font-semibold uppercase mb-2">Flash Sale</p>
+
+                        <h2 class="font-playfair-display text-3xl font-semibold mb-2">25% Off | <span class="text-brand-orange">Luxury Roses</span> & Botanical Sets</h2>
+
+                        <p class="text-xs mb-2">Limited stock available for this week only.</p>
+
+                        <a href="#" class="text-sm font-semibold text-brand-orange gap-1 p-1 flex items-center justify-center">Shop Now <i class="fa-solid fa-arrow-right transition-all duration-300 group-hover:translate-x-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Latest Section End -->
+
+    <!-- Form Section Start -->
+    <section id="form-section" class="py-16 relative bg-[url(./image/join-bg.avif)] bg-no-repeat bg-cover bg-center">
+        <!-- section cover -->
+        <div class="absolute bg-black/70 size-full top-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 flex flex-col items-center justify-center text-center relative z-20 text-white gap-6">
+
+            <!-- form badge -->
+            <p class="text-brand-orange border border-1 border-brand-orange px-6 py-1 text-xs uppercase bg-orange-500/50 rounded-full font-semibold">
+                Stay Connected
+            </p>
+
+            <!-- form title -->
+            <h2 class="text-4xl font-playfair-display font-semibold">
+                Join Our <span class="text-brand-orange">Floral Circle</span>
+            </h2>
+
+            <!-- form Description -->
+            <p class="max-w-[640px] text-gray-300">
+            Subscribe to get exclusive discounts, seasonal plant care tips, and $10 off your first handcrafted bouquet order!
+            </p>
+
+            <!-- Form Button Group -->
+            <div class="flex flex-col sm:flex-row gap-3 w-full max-w-[640px]">
+
+                <!-- Email Input -->
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Enter your email address" 
+                    class="flex-1 w-full text-black px-6 py-4 text-md rounded-full outline-none bg-white/30 backdrop-blur-xs placeholder:font-semibold"
+                >
+
+                <!-- Button -->
+                <button class="w-full sm:w-auto px-8 py-4 bg-brand-orange text-white text-sm rounded-full font-semibold transition-all duration-300 hover:scale-105 shrink-0 whitespace-nowrap">
+                    Subscribe Now
+                </button>
+
+            </div>
+
+            <!-- Bottom Line -->
+            <p class="text-gray-400 text-xs">
+                We respect your privacy. Unsubscribe at any time.
+            </p>
+        </div>
+    </section>
 
 
 </body>
